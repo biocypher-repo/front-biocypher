@@ -27,8 +27,11 @@
     <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#663fb5">
+
     <link rel="stylesheet" href="css/landio.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
     <link rel="stylesheet" href="css/main.css">
   </head>
 
@@ -100,10 +103,10 @@
 
     <header class="slide jumbotron bg-inverse text-xs-center center-vertically" role="banner">
       <div class="slide container">
-        <h1 class="display-3">Biocypher</h1>
+        <img src="img/biocypher-logo.png" />
         <h2 class="m-b-3">Yada yada yo <em>Blockchain</em></h2>
         <ul class="nav nav-inline social-share">
-          <a  href="#intro" ><i class="fa fa-chevron-down fa-5x"></i></a>
+          <a  href="#intro" ><i class="wow bounce infinite fa fa-chevron-down fa-5x" data-wow-duration="2s"></i></a>
         </ul>
       </div>
     </header>
@@ -114,7 +117,7 @@
     <section  id="intro" class="slide section-features text-xs-center">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="card">
               <div class="card-block">
                 <span class="icon-pen display-1"></span>
@@ -124,7 +127,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="card">
               <div class="card-block">
                 <span class="icon-thunderbolt display-1"></span>
@@ -134,7 +137,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="card m-b-0">
               <div class="card-block">
                 <span class="icon-heart display-1"></span>
@@ -144,71 +147,28 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials
-    ================================================== -->
-
-    <section class="section-testimonials text-xs-center bg-inverse">
-      <div class="container">
-        <h3 class="text-xs-center">Advantages</h3>
-        <div id="carousel-testimonials" class="carousel slide" data-ride="carousel" data-interval="0">
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <blockquote class="blockquote">
-                <img src="img/face1.jpg" height="80" width="80" alt="Avatar" class="img-circle">
-                <p class="h3">Good design at the front-end suggests that everything is in order at the back-end, whether or not that is the case.</p>
-                <footer>Dmitry Fadeyev</footer>
-              </blockquote>
-            </div>
-            <div class="carousel-item">
-              <blockquote class="blockquote">
-                <img src="img/face2.jpg" height="80" width="80" alt="Avatar" class="img-circle">
-                <p class="h3">It’s not about knowing all the gimmicks and photo tricks. If you haven’t got the eye, no program will give it to you.</p>
-                <footer>David Carson</footer>
-              </blockquote>
-            </div>
-            <div class="carousel-item">
-              <blockquote class="blockquote">
-                <img src="img/face3.jpg" height="80" width="80" alt="Avatar" class="img-circle">
-                <p class="h3">There’s a point when you’re done simplifying. Otherwise, things get really complicated.</p>
-                <footer>Frank Chimero</footer>
-              </blockquote>
-            </div>
-            <div class="carousel-item">
-              <blockquote class="blockquote">
-                <img src="img/face4.jpg" height="80" width="80" alt="Avatar" class="img-circle">
-                <p class="h3">Designing for clients that don’t appreciate the value of design is like buying new tires for a rental car.</p>
-                <footer>Joel Fisher</footer>
-              </blockquote>
-            </div>
-            <div class="carousel-item">
-              <blockquote class="blockquote">
-                <img src="img/face5.jpg" height="80" width="80" alt="Avatar" class="img-circle">
-                <p class="h3">Every picture owes more to other pictures painted before than it owes to nature.</p>
-                <footer>E.H. Gombrich</footer>
-              </blockquote>
+          <div class="col-md-3">
+            <div class="card m-b-0">
+              <div class="card-block">
+                <span class="icon-heart display-1"></span>
+                <h4 class="card-title">Free</h4>
+                <h6 class="card-subtitle text-muted">Forever and ever</h6>
+                <p class="card-text">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
+              </div>
             </div>
           </div>
-          <ol class="carousel-indicators">
-            <li class="active"><img src="img/face1.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="0" class="img-fluid img-circle"></li>
-            <li><img src="img/face2.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="1" class="img-fluid img-circle"></li>
-            <li><img src="img/face3.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="2" class="img-fluid img-circle"></li>
-            <li><img src="img/face4.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="3" class="img-fluid img-circle"></li>
-            <li><img src="img/face5.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="4" class="img-fluid img-circle"></li>
-          </ol>
+
         </div>
       </div>
     </section>
+
 
     <!-- Sign Up
     ================================================== -->
 
     <section class="section-signup bg-faded">
       <div class="container">
-        <h3 class="text-xs-center m-b-3">Let us help you or just say hay!</h3>
+        <h3 class="text-xs-center m-b-3">Let us help you or just say hi!</h3>
         <form>
           <div class="row">
             <div class="col-md-6 col-xl-3">
@@ -230,7 +190,7 @@
             </div>
             <div class="col-md-6 col-xl-3">
               <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block">Send</button>
+                <button type="submit" class="btn btn-primary btn-block">Say hi!</button>
               </div>
             </div>
           </div>
@@ -243,5 +203,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/landio.min.js"></script>
+
+
+
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
   </body>
 </html>

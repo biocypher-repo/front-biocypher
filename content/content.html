@@ -18,17 +18,34 @@
     <link rel="stylesheet" href="css/animate.css">
 
     <link rel="stylesheet" href="css/main.css">
-  		<script src="js/modernizr.custom.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+
+
 	</head>
 	<body>
+
 		<svg class="hidden">
 			<defs>
 				<path id="tabshape" d="M80,60C34,53.5,64.417,0,0,0v60H80z"/>
 			</defs>
 		</svg>
-		<div class="container">
-			<!-- Top Navigation -->
-			<section>
+		<div class="container ">
+				<div class="wow fadeIn tabs tabs-style-flip ">
+
+					<nav class="head-user">
+						<ul>
+							<li><a href="#section-flip-5" class=""><img class="user" src="../img/face1.jpg" alt=""> <img src="../img/close.png" class="right" alt="" onclick="window.history.back()"></a></li>
+						</ul>
+					</nav>
+
+					<div class="content-wrap">
+						<section id="section-flip-1">
+							Sr. Badalhocas
+						</section>
+					</div><!-- /content -->
+				</div><!-- /tabs -->
+				<br/>
+
 				<div class="wow fadeIn tabs tabs-style-flip" data-wow-duration="4s">
 					<nav>
 						<ul>
@@ -38,16 +55,16 @@
 					</nav>
 					<div class="content-wrap">
 						<section id="section-flip-1">
-							<a href="#section-flip-4" class=" "><i class="fa fa-check-square-o" aria-hidden="true"></i> Contrato 1</a><br/><br/>
-							<a href="#section-flip-4" class=""><i class="fa fa-check-square-o" aria-hidden="true"></i> Contrato 2</a>
+							<a href="#section-flip-4" class=" "><i class="fa " aria-hidden="true"></i> Contrato 1</a><br/><br/>
+							<a href="#section-flip-4" class=""><i class="fa " aria-hidden="true"></i> Contrato 2</a>
 						</section>
 						<section id="section-flip-2">
-							<a href="#section-flip-4" class=""><i class="fa fa-check-square-o" aria-hidden="true"></i>Associação 1</a><br/><br/>
-							<a href="#section-flip-4" class=""><i class="fa fa-check-square-o" aria-hidden="true"></i>Associação 2</a>
+							<a href="#section-flip-4" class=""><i class="fa " aria-hidden="true"></i>Associação 1</a><br/><br/>
+							<a href="#section-flip-4" class=""><i class="fa " aria-hidden="true"></i>Associação 2</a>
 						</section>
 					</div><!-- /content -->
 				</div><!-- /tabs -->
-			</section>
+
 
 		</div><!-- /container -->
 		<script src="js/cbpFWTabs.js"></script>
@@ -69,6 +86,17 @@
 		<script>
 		new WOW().init();
 		</script>
+
+
+
+
+
+
+
+
+
+
+
 
 	</body>
 </html>

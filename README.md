@@ -1,4 +1,4 @@
 # Front Biocypher
-Front-End Module form Biocypher
+Front-End Module for Biocypher
 
 * [DEMO](https://biocypher.github.io/front-biocypher)

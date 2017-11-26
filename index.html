@@ -41,7 +41,7 @@
     ================================================== -->
 
     <nav class="navbar navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top">
-      <div class="container hidden">
+      <div class="container useron">
         <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
         &#9776;
       </a>
@@ -66,7 +66,7 @@
                 </div>
                 <a href="#" class="dropdown-item text-uppercase">Contratos <span  class="text-muted">: 5</span> </a>
                 <a href="#" class="dropdown-item text-uppercase">Associações <span  class="text-muted">: 12</span></a>
-                <a href="#" class="dropdown-item text-uppercase"><span  class="text-muted"><i class="fa fa-eject" ></i> Logout</span></a>
+                <a href="#" onclick="logout()" class="dropdown-item text-uppercase"><span  class="text-muted"><i class="fa fa-eject" ></i> Logout</span></a>
                 <a href="content/content.html" class="btn-circle has-gradient pull-xs-right">
                   <span class="sr-only">Edit</span>
                   <span class="icon-edit"></span>
@@ -97,7 +97,7 @@
           </a>
         </div>
       </div>
-      <div class="container">
+      <div class="container useroff">
           <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
           &#9776;
         </a>
@@ -122,16 +122,15 @@
                   </div>
                   <a href="#" class="dropdown-item text-uppercase">login <span  class="text-muted"></span> </a>
                   <a href="#" class="dropdown-item text-uppercase"> <input type="text"> <span  class="text-muted"></span></a>
-                  <a href="content/content.html" class="btn-circle has-gradient pull-xs-right">
-                    <span class="sr-only">Edit</span>
+                  <a href="#" class="btn-circle has-gradient pull-xs-right" onclick="signin()">
                     <i class="fa fa-power-off"></i>
                   </a>
                 </div>
               </li>
             </ul>
           </div>
-  
-  
+
+
           <div id="collapsingMobileUser" class="collapse navbar-toggleable-custom dropdown-menu-custom p-x-1 hidden-md-up" role="tabpanel" aria-labelledby="collapsingMobileUser">
             <div class="media m-t-1">
               <div class="media-left">
@@ -152,7 +151,7 @@
             </a>
           </div>
         </div>
-  
+
     </nav>
 
     <!-- Hero Section
@@ -178,22 +177,22 @@
           <div class="card explanation" >
             <div class="card-block explanation" style="background-color:aliceblue; border-radius: 5px; padding-top: 3%;">
               <h4 class="card-title" style="color:#0B1A23;"> <b>Biocypher</b> é um banco de contratos digital e autorregulado, que armazena documentos com autenticação biométrica em uma blockchain privada.</h4>
-              <div style="padding-top: 40px;">              
+              <div style="padding-top: 40px;">
                 <h5 class="card-title" style="color:#0B1A23; font-size: 150%;">Como funciona?</h5>
-                <div style="height: 20px; width:"></div>   
-                <img src="img/iconew.png" width="50%"></img> 
-                <div style="padding: 25px 25px 5px 25px;">              
+                <div style="height: 20px; width:"></div>
+                <img src="img/iconew.png" width="50%"></img>
+                <div style="padding: 25px 25px 5px 25px;">
                   <h4 style=" font-size: 18px; color:#0B1A23; text-align: left;">1.  Duas ou mais partes entram em um acordo e decidem manifestar a sua vontade através de um contrato. </h4>
-                  <h4 style=" font-size: 18px; color:#0B1A23; text-align: left;">2.  Os envolvidos recolhem suas respectivas biometrias para autenticar esse contrato, criando então uma associação entre elas no sistema da Biocypher. </h4>              
-                  <h4 style=" font-size: 18px; color:#0B1A23; text-align: left;">3.  O contrato é assinado por meio das biometrias, garantindo a sua autencidade, autoria e integridade. </h4>              
+                  <h4 style=" font-size: 18px; color:#0B1A23; text-align: left;">2.  Os envolvidos recolhem suas respectivas biometrias para autenticar esse contrato, criando então uma associação entre elas no sistema da Biocypher. </h4>
+                  <h4 style=" font-size: 18px; color:#0B1A23; text-align: left;">3.  O contrato é assinado por meio das biometrias, garantindo a sua autencidade, autoria e integridade. </h4>
                   <h4 style=" font-size: 18px; color:#0B1A23; text-align: left;">4.  Os arquivos e associações dos contratos são armazenados com toda a segurança na Blockchain, sendo acessíveis somente mediante uso da biometria das partes ou de seus procuradores, e garantindo a sua perpetualidade até que o mesmo termine, pela vontade das partes ou por concluído o seu propósito.                  </h4>
-              </div>                
+              </div>
               </div>
               <h6 class="card-subtitle text-muted"></h6>
               <p class="card-text"></p>
             </div>
           </div>
-        </div>       
+        </div>
       </div>
     </div>
   </section>
@@ -234,7 +233,7 @@
               </div>
             </div>
           </div>
-         
+
         </div>
       </div>
     </section>
@@ -282,9 +281,23 @@
     <script src="js/landio.min.js"></script>
 
 
-
     <script src="js/wow.min.js"></script>
     <script>
+    $('.useron').hide()
+
+    function signin() {
+      $('.useron').show()
+      $('.useroff').hide()
+
+    }
+
+    function logout() {
+      $('.useron').hide()
+      $('.useroff').show()
+
+    }
+
+
     new WOW().init();
     </script>
 

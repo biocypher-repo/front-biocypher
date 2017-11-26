@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tab Styles Inspiration</title>
+		<meta name="description" content="Tab Styles Inspiration: A small collection of styles for tabs" />
+		<meta name="keywords" content="tabs, inspiration, web design, css, modern, effects, svg" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
+		<link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
+
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/main.css">
+  		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<svg class="hidden">
+			<defs>
+				<path id="tabshape" d="M80,60C34,53.5,64.417,0,0,0v60H80z"/>
+			</defs>
+		</svg>
+		<div class="container">
+			<!-- Top Navigation -->
+			<section>
+				<div class="wow fadeIn tabs tabs-style-flip" data-wow-duration="4s">
+					<nav>
+						<ul>
+							<li><a href="#section-flip-5" class=""><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Contratos</a></li>
+							<li><a href="#section-flip-4" class=""><i class="fa fa-users" aria-hidden="true"></i> Associações</a></li>
+						</ul>
+					</nav>
+					<div class="content-wrap">
+						<section id="section-flip-1">
+							<a href="#section-flip-4" class=" "><i class="fa fa-check-square-o" aria-hidden="true"></i> Contrato 1</a><br/><br/>
+							<a href="#section-flip-4" class=""><i class="fa fa-check-square-o" aria-hidden="true"></i> Contrato 2</a>
+						</section>
+						<section id="section-flip-2">
+							<a href="#section-flip-4" class=""><i class="fa fa-check-square-o" aria-hidden="true"></i>Associação 1</a><br/><br/>
+							<a href="#section-flip-4" class=""><i class="fa fa-check-square-o" aria-hidden="true"></i>Associação 2</a>
+						</section>
+					</div><!-- /content -->
+				</div><!-- /tabs -->
+			</section>
+
+		</div><!-- /container -->
+		<script src="js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/landio.min.js"></script>
+
+
+
+		<script src="js/wow.min.js"></script>
+		<script>
+		new WOW().init();
+		</script>
+
+	</body>
+</html>
